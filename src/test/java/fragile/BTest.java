@@ -14,6 +14,6 @@ public class BTest {
 
         assertThat(b.x(), is(x));
         assertThat(b.y(), is(y));
-        assertThat(b.z(), is(x * x + y * y));
+        assertThat(b.x() * b.x() + b.y() * b.y(), is(x * x + y * y));
     }
 }

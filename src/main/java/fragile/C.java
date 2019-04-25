@@ -8,6 +8,6 @@ public class C {
     }
 
     public int compute() {
-        return b.y() + b.x() - b.z();
+        return b.y() + b.x() - (b.x() * b.x() + b.y() * b.y());
     }
 }

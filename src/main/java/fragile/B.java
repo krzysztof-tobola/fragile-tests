@@ -16,8 +16,4 @@ public class B {
     public int y() {
         return y;
     }
-
-    public int z() {
-        return x() * x() + y() * y();
-    }
 }

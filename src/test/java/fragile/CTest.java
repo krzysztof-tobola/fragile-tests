@@ -13,7 +13,7 @@ public class CTest {
         B b = mock(B.class);
         when(b.x()).thenReturn(7);
         when(b.y()).thenReturn(3);
-        when(b.z()).thenReturn(100);
+        when(b.x() * b.x() + b.y() * b.y()).thenReturn(100);
 
         C a = new C(b);
         int result = a.compute();
